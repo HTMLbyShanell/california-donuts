@@ -1,0 +1,320 @@
+html{
+    background-color: #ece2d0;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.a{
+    color: #e56399;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.a:hover{
+    color: #51a3bc;
+}
+
+
+header a{
+    text-decoration: none;
+    color: #e56399;
+    text-shadow: 2px 2px 2px black;
+}
+
+header a h1{
+    margin-top: 5px;
+    padding: 0;
+    padding-left: 25px;
+}
+
+.main-nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #311a16;
+    display: flex;
+    z-index: 10;
+    top: 0;
+}
+
+
+nav{
+
+    position: absolute;
+    right: 0;
+    float: right;
+    height: 50px;
+    width: 60%;
+    font-size: 1em;
+    font-family: Veranda, Helectiva, Arial, sans-serif;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+#nav_menu ul{
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+
+}
+
+
+#nav_menu ul li a{
+    float: right;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: #a38069;
+    font-size: 1.2em;
+}
+
+#nav_menu ul li a:hover{
+    color: #d9c7a5;
+}
+
+.div1{
+    width: 100%;
+}
+
+#eat_hole{
+    margin-left: 20%;
+    margin-right:20%;
+    width: 60%;
+    font-size: 4em;
+    color: #503f3e;
+    text-align: center;
+    font-family: Veranda, Helectiva, Arial, sans-serif;
+    border-bottom: 2px #503f3e solid;
+    border-bottom-width: 60%;
+}
+
+#eat_ipsum{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    text-align: justify;
+    color: #503f3e;
+}
+
+#badge_column{
+    display: flex;
+    width: 100%;
+    column-count: 3;
+    height: 300px;
+    background-color: #f4cddd;
+    text-align-last: center;
+}
+
+.eat_badges{
+    width: 33.33%;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 50px;
+    border: 2px;
+}
+
+.eat_badges i{
+    padding-left: 8%;
+    padding-right: 8%;
+    color: #311a16;
+}
+
+.eat_badges h2{
+    color: #993955;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.eat_badges p{
+    color: #311a16;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+#center{
+    text-align: center;
+    text-indent: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position:absolute;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #311a16;
+    color: #8e6951;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#pic_column{
+   column-count: 3;
+    height: 350px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+#pic_list{
+   column-count: 3;
+    height: 350px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#pic{
+    display: flex;
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #311a16;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.overlaymenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #311a16;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlaymenu{
+  top: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+    font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width:768px){
+
+.div1 img{
+    height: 300px;
+    object-fit: cover;
+}
+
+#eat_hole{
+    font-size: 3em;
+}
+
+ #hidetext{
+    display: none;
+}
+
+#pic_column{
+    display: flex;
+    height: 1100px;
+   flex-direction: column;
+}
+
+.container {
+  padding-bottom: 25px;
+}
+
+#pic_list{
+   display: flex;
+   height: 1100px;
+   flex-direction: column;
+}
+
+#pic{
+    padding-bottom: 25px;
+}
+
+#badge_column{
+    height: 200px;
+}
+
+.eat_badges{
+    width: 33.33%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    border: 0;
+}
+
+.eat_badges i{
+    font-size: 5em;
+    padding-top: 25px;
+}
+
+.eat_badges h2{
+    font-size: 1em;
+}
+
+.eat_badges p{
+    font-size: 0.7em;
+}
+
+}
+
+
